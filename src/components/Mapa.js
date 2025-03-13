@@ -21,7 +21,7 @@ const Mapa = () => {
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         {error && <p style={{ color: "red" }}>{error}</p>}
         <GoogleMap
-          mapContainerStyle={{ width: "80%", height: "80vh" }}
+          mapContainerStyle={{ width: "100%", height: "80vh" }}
           center={{ lat: -12.04318, lng: -77.02824 }}
           zoom={14}
         >
