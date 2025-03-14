@@ -4,7 +4,7 @@ import ReportesLista from "../components/ReportesLista";
 
 const Home = () => {
   return (
-    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg ">
+    <div class="p-4">
       <div class="grid grid-cols-3 gap-4 mb-4">
         <div class="flex items-center col-span-2 justify-center rounded-sm bg-gray-50 ">
           <Mapa />

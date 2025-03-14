@@ -7,10 +7,12 @@ import {
 } from "react-router-dom";
 import Home from "./../pages/Home";
 import Reportes from "./../pages/Reportes";
+import Navbar from "./NavBar";
 
 const Sidebar = () => {
   return (
     <div>
+      <Navbar />
       <button
         data-drawer-target="separator-sidebar"
         data-drawer-toggle="separator-sidebar"
@@ -36,7 +38,7 @@ const Sidebar = () => {
 
       <aside
         id="separator-sidebar"
-        className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-50"
+        className="fixed top-15 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-gray-50"
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto">
@@ -100,7 +102,7 @@ const Sidebar = () => {
         </div>
       </aside>
 
-      <div className="p-4 sm:ml-64">
+      <div className="sm:ml-64">
         <Outlet />
       </div>
     </div>
